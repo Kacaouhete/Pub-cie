@@ -1,0 +1,220 @@
+* {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #121212;
+  color: #f1f1f1;
+}
+
+#intro {
+  height: 100vh;
+  background: #000
+    url("https://www.moustique.be/wp-content/uploads/2024/03/6602a1f33b335-Belgaimage-80939030-1024x681.jpg")
+    center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.95);
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 11000;
+  transform: translateY(-100%);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #fff;
+}
+nav.visible {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+}
+nav ul li {
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+nav ul li:hover {
+  color: #fed1d1;
+}
+
+nav img {
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  width: 2rem;
+  font-size: 2rem;
+}
+
+#menuIcon {
+  width: 1.5rem;       /* ou px : ex. 24px */
+  height: auto;        /* garde les proportions */
+  filter: brightness(0) invert(1); /* pour forcer en blanc */
+}
+
+.toggle_btn img {
+  transition: transform 0.3s ease;
+}
+
+.dropdown_menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+.dropdown_menu ul {
+  display: block;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 935px) {
+  nav .toggle_btn img {
+    display: block;
+    color: #fff;
+  }
+  nav ul .lim {
+    display: none;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #intro {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #intro {
+    font-size: 1.8rem;
+  }
+}
+main {
+  max-width: 900px;
+  margin: 6rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.8rem;
+}
+
+.img-container {
+  width: 100%;
+  max-height: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.img-container img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+#origine img {
+  height: auto;
+}
+
+#evolution img {
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Démocratisation de la publicité sur Internet</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="intro">La pub sur Internet au fil du temps</div>
+
+      <nav id="navbar" class="visible">
+        <div class="logo">PUBWEB</div>
+        <div class="nav-links">
+          <ul>
+            <li class="lim"><a href="#origine">Origine</a></li>
+            <li class="lim"><a href="#evolution">Évolution</a></li>
+            <li class="lim"><a href="#impact">Impact</a></li>
+            <li class="lim"><a href="#risques">Risques</a></li>
+            <li class="lim"><a href="#comparaison">Comparaison</a></li>
+            <div class="toggle_btn">
+              <img src="./menu-btn.png" alt="menu" id="menuIcon" />
+            </div>
+              <img src="./274c_flat.png" alt="croix">
+          </ul>
+        </div>
+        <div class="dropdown_menu">
+          <ul>
+            <li><a href="#origine">Origine</a></li>
+            <li><a href="#evolution">Évolution</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#risques">Risques</a></li>
+            <li><a href="#comparaison">Comparaison</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="origine" class="hidden-section">
+        <h2>Première apparition de la publicité sur Internet</h2>
+        <div class="img-container">
+          <img
+            src="https://www.sharing.agency/wp-content/uploads/2019/11/premiere-banniere-sharing.png"
+            alt="banière pub"
+          />
+        </div>
+        <p>
+          La première publicité en ligne date de 1994 avec la bannière
+          publicitaire d’AT&T sur HotWired. Cette apparition marqua la naissance
+          d’une nouvelle méthode de communication commerciale globale et
+          accessible.
+        </p>
+      </section>
+
+      <section id="evolution" class="hidden-section">
+        <h2>Évolution et changement de format</h2>
+        <div class="img-container">
+          <img
+            src="https://www.narratiiv.school/sites/default/files/images/hot-content-news/desktop/histoire-de-la-publicite_0.jpg"
+            alt="Formats publicitaires en ligne"
+          />
+        </div>
+        <p>
+          Progressivement, la publicité sur Internet s’est diversifiée :
+          pop-ups, vidéos, publicités natives, retargeting, et enfin publicité
+          programmatique. Ces formats ont permis un ciblage plus précis et des
+          interactions plus riches.
+        </p>
+      </section>
+
+      <section id="impact" class="hidden-section">
+        <h2>Impact sur les utilisateurs</h2>
+        <div class="img-container">
+          <img
+            src="https://www.wellcom.fr/wnews/wp-content/uploads/2019/05/ximage-une-768x515.jpg.pagespeed.ic.cwf6Ead7x4.webp"
+            alt="Impact de la publicité sur les utilisateurs"
+          />
+        </div>
+        <p>
+          La publicité a transformé l’expérience web : elle finance du contenu
+          gratuit mais génère aussi saturation, intrusions et risques de
+          désinformation. Le ciblage comportemental questionne la vie privée et
+          la manipulation des opinions.
+        </p>
+      </section>
+
+      <section id="risques" class="hidden-section">
+        <h2>Risques et dangers liés à la publicité</h2>
+        <div class="img-container">
+          <img
+            src="https://www.destrudata.com/sites/destrudata.com/files/news/photos/5_risques_et_5_solutions_pour_la_securite_de_vos_donnees.jpeg"
+            alt="Risques publicitaires et données"
+          />
+        </div>
+        <p>
+          Parmi les risques : collecte excessive de données, publicités
+          frauduleuses, contenus nocifs, et addiction à l’attention. La
+          manipulation algorithmique peut influencer sans transparence ni
+          consentement réel.
+        </p>
+      </section>
+
+      <section id="comparaison" class="hidden-section">
+        <h2>Comparaison : avant et après la publicité sur Internet</h2>
+        <div class="img-container">
+          <img
+            src="https://www.presse-citron.net/app/uploads/2022/02/internet-annees-2000-1024x682.jpg"
+            alt="Avant et après la publicité en ligne"
+          />
+        </div>
+        <p>
+          Avant la publicité, Internet était un espace principalement informatif
+          et expérimental, sans modèle économique clairement défini.
+          L’introduction de la publicité a permis la démocratisation des
+          services gratuits, mais au prix d’une commercialisation et d’une
+          surveillance accrues.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/Kacaouhete/Pub-cie" target="_blank"
+        >Lien vers les fichiers du site</a
+      >
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+      console.log("JS actif");
+      document.querySelector('.toggle_btn').onclick = () => {
+        console.log("Clic détecté");
+        document.querySelector('.dropdown_menu').classList.toggle('open');
+      };
+    </script>
+  </body>
+</html>
