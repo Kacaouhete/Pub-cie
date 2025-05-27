@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Démocratisation de la publicité sur Internet</title>
+    <title>PUBWEB</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <div id="intro">La pub sur Internet au fil du temps</div>
 
       <nav id="navbar" class="visible">
-        <div class="logo">PUBWEB</div>
+        <a href="#intro"><div class="logo">PUBWEB</div></a>
         <div class="nav-links">
           <ul>
             <li class="lim"><a href="#origine">Origine</a></li>
@@ -19,10 +19,11 @@
             <li class="lim"><a href="#impact">Impact</a></li>
             <li class="lim"><a href="#risques">Risques</a></li>
             <li class="lim"><a href="#comparaison">Comparaison</a></li>
+            <li class="lim"><a href="../site 2/index.html#fichiers">Fichiers télechargeable</a></li>
             <div class="toggle_btn">
               <img src="./menu-btn.png" alt="menu" id="menuIcon" />
             </div>
-              <img src="./274c_flat.png" alt="croix">
+            <img src="./274c_flat.png" alt="croix" />
           </ul>
         </div>
         <div class="dropdown_menu">
@@ -32,6 +33,7 @@
             <li><a href="#impact">Impact</a></li>
             <li><a href="#risques">Risques</a></li>
             <li><a href="#comparaison">Comparaison</a></li>
+            <li><a href="../site 2/index.html#fichiers">Fichiers téléchargeable</a></li>
           </ul>
         </div>
       </nav>
@@ -120,15 +122,15 @@
     </main>
     <footer>
       <a href="https://github.com/Kacaouhete/Pub-cie" target="_blank"
-        >Lien vers les fichiers du site</a
+        ><i>Mon profil Github et les fichiers</i></a
       >
     </footer>
     <script src="./index.js"></script>
     <script>
       console.log("JS actif");
-      document.querySelector('.toggle_btn').onclick = () => {
+      document.querySelector(".toggle_btn").onclick = () => {
         console.log("Clic détecté");
-        document.querySelector('.dropdown_menu').classList.toggle('open');
+        document.querySelector(".dropdown_menu").classList.toggle("open");
       };
     </script>
   </body>
